@@ -2,16 +2,6 @@
 
 This document provides instructions and context for Claude when performing file organization tasks. Claude will read this file automatically when working in this directory.
 
-## ⚠️ SAFETY FIRST ⚠️
-
-Remember these critical safety guidelines:
-- NEVER execute file operations without explicit user approval
-- Always provide clear explanations of what you plan to do
-- Warn about potential risks when suggesting file operations
-- Be extremely cautious with deletion recommendations
-- Treat user files as critical - assume they have no backups
-- When in doubt, choose the safer option
-
 ## IMPORTANT: Directory Context
 
 When these slash commands are used, Claude will organize **the current directory** where Claude Code is being run. The user will place this .claude directory inside any folder they want to organize and run Claude Code from there.
@@ -84,3 +74,49 @@ For general organization:
 4. Look for application packages
 5. Suggest organization actions
 6. Wait for user approval before executing
+
+## Recommended Archive Structure
+
+The recommended archive structure for this project is:
+
+```
+Archives/
+├── 7-Day/
+│   ├── Documents/
+│   ├── Executables/
+│   ├── Code/
+│   ├── Images/
+│   └── ZipFiles/
+├── 30-Day/
+│   ├── Documents/
+│   ├── Executables/
+│   ├── Code/
+│   ├── Images/
+│   └── ZipFiles/
+└── Important/
+    ├── Financial/
+    └── Reference/
+```
+
+### Archive Policy Guidelines:
+
+1. **7-Day Archive**
+   - Files older than 7 days that are not immediately needed
+   - Organized by file type categories within the 7-day folder
+   - Files here should be considered for moving to 30-day archive after review
+
+2. **30-Day Archive**
+   - Files older than 30 days that are rarely accessed
+   - Maintained with same subcategory structure as 7-day
+   - Files here should be considered for permanent archiving or deletion
+
+3. **Important Archive**
+   - Files that need special retention regardless of age:
+     - Financial: Receipts, invoices, statements (retain 7+ years)
+     - Reference: Important documentation, guides, specifications
+     - Personal: ID documents, certificates, health records
+
+### Special Handling:
+- Financial documents should never be automatically archived based on age alone
+- Application packages should be kept intact (don't split related files)
+- Documents with ongoing relevance should be preserved in the Important section

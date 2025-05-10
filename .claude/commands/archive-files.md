@@ -16,6 +16,29 @@ Please organize your recommendations in these categories:
 3. **Delete Candidates**: Files >30 days old that appear safe to delete
 4. **Keep Active**: Files that should remain accessible regardless of age
 
+Follow the recommended archive structure:
+
+```
+Archives/
+├── 7-Day/
+│   ├── Documents/
+│   ├── Executables/
+│   ├── Code/
+│   ├── Images/
+│   └── ZipFiles/
+├── 30-Day/
+│   ├── Documents/
+│   ├── Executables/
+│   ├── Code/
+│   ├── Images/
+│   └── ZipFiles/
+└── Important/
+    ├── Financial/
+    └── Reference/
+```
+
+Remember to maintain category organization within each archive tier. This maintains file type grouping while adding time-based organization, making retrieval more intuitive.
+
 For each file, explain your reasoning so I can understand why you've made each recommendation.
 
 Wait for my approval before performing any archiving actions.
